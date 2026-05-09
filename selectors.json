@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "probe_id": "CHLF25W25072",
+  "selectors": {
+    "animal_id":     { "kind": "css",  "value": "animal-identity h1" },
+    "animal_name":   { "kind": "css",  "value": "animal-name" },
+    "nlis":          { "kind": "text", "value": "NLIS" },
+    "sex_row":       { "kind": "css",  "value": "status-row" },
+    "wbv":           { "kind": "text", "value": "WBV" },
+    "pedigree":      { "kind": "css",  "value": "div[style*='--gen: 1']" },
+    "genetic_tests": { "kind": "css",  "value": "genetic-tests" }
+  },
+  "sex": {
+    "container":  "status-row",
+    "filter_text": "SEX:",
+    "value_tag":  "status-value",
+    "fallback":   "print-sex"
+  },
+  "wbv_indices": {
+    "BFI":  0,
+    "D200": 5,
+    "D400": 6,
+    "D600": 7,
+    "Milk": 10,
+    "CW":   12,
+    "EMA":  13,
+    "RUMP": 14,
+    "MS":   15,
+    "MF":   16
+  }
+}
