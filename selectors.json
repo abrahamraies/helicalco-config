@@ -1,20 +1,20 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "probe_id": "CHLF25W25072",
   "selectors": {
-    "animal_id":     { "kind": "css",  "value": "animal-identity h1" },
-    "animal_name":   { "kind": "css",  "value": "animal-name" },
-    "nlis":          { "kind": "text", "value": "NLIS" },
-    "sex_row":       { "kind": "css",  "value": "status-row" },
-    "wbv":           { "kind": "text", "value": "WBV" },
-    "pedigree":      { "kind": "css",  "value": "div[style*='--gen: 1']" },
-    "genetic_tests": { "kind": "css",  "value": "genetic-tests" }
+    "animal_id":     { "kind": "css",       "value": "animal-identity h1" },
+    "animal_name":   { "kind": "css",       "value": "animal-name" },
+    "nlis":          { "kind": "css",       "value": "status-row" },
+    "sex_row":       { "kind": "css",       "value": "status-row" },
+    "wbv":           { "kind": "cell",      "value": "WBV" },
+    "pedigree":      { "kind": "css",       "value": "div[style*='--gen: 1']" },
+    "genetic_tests": { "kind": "css",       "value": "genetic-tests" }
   },
   "sex": {
-    "container":  "status-row",
+    "container":   "status-row",
     "filter_text": "SEX:",
-    "value_tag":  "status-value",
-    "fallback":   "print-sex"
+    "value_tag":   "status-value",
+    "fallback":    "print-sex"
   },
   "wbv_indices": {
     "BFI":  0,
